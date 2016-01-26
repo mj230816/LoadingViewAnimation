@@ -1,4 +1,1 @@
 # LoadingViewAnimationStep
-# LoadingViewAnimationStep
-# LoadingViewAnimationStep
-# LoadingViewAnimationStep
