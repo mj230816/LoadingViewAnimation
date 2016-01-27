@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-rB-Smi">
+                                <rect key="frame" x="20" y="570" width="55" height="30"/>
+                                <state key="normal" title="Loading"/>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXe-jP-ncj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhF-j1-Aay">
+                                <rect key="frame" x="149" y="570" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4PR-6z-8iC"/>
+                                    <constraint firstAttribute="width" constant="57" id="vcB-5J-tQ3"/>
+                                </constraints>
+                                <state key="normal" title="Fail"/>
+                                <connections>
+                                    <action selector="fail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSn-jz-YcF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIy-AW-R64">
+                                <rect key="frame" x="83" y="570" width="58" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="succes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQ5-Xj-1m5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ls2-rB-Smi" secondAttribute="bottom" id="8xZ-qy-g5M"/>
+                            <constraint firstItem="JIy-AW-R64" firstAttribute="leading" secondItem="Ls2-rB-Smi" secondAttribute="trailing" constant="8" id="Thh-jx-ssx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rhF-j1-Aay" secondAttribute="bottom" id="USF-AL-yID"/>
+                            <constraint firstItem="rhF-j1-Aay" firstAttribute="leading" secondItem="JIy-AW-R64" secondAttribute="trailing" constant="8" id="ec5-1W-9oc"/>
+                            <constraint firstItem="Ls2-rB-Smi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pZv-Li-P49"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JIy-AW-R64" secondAttribute="bottom" id="srL-2D-FbA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="389"/>
+        </scene>
+    </scenes>
+</document>
